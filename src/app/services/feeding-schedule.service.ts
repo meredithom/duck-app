@@ -14,4 +14,8 @@ export class FeedingScheduleService {
   add(duckFormData): Promise<any> {
     return this.http.post<any>(`http://localhost:3000/api/feedingSchedule`, duckFormData, {}).toPromise();
   }
+
+  get(): Promise<FeedingSchedule[]> {
+    return this.http.get<any>(`http://localhost:3000/api/feedingSchedule`, {}).toPromise();
+  }
 }

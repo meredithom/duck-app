@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FeedingSchedule } from '../models/feeding-schedule';
+import { FeedingScheduleService } from '../services/feeding-schedule.service';
 
-//testing
-import { FeedingSchedules } from '../mock-feeding-schedules';
 
 @Component({
   selector: 'app-feeding-schedule',
@@ -15,7 +14,7 @@ import { FeedingSchedules } from '../mock-feeding-schedules';
 export class FeedingScheduleComponent implements OnInit {
 
   headers = [
-    'id',
+    '_id',
     'feedingTime',
     'feedingLocation',
     'foodType',
@@ -24,12 +23,15 @@ export class FeedingScheduleComponent implements OnInit {
 
   ];
 
-  feedingSchedules = FeedingSchedules;
+  feedingSchedules = [];
 
 
-  constructor() { }
+  constructor(private feedingScheduleService: FeedingScheduleService) {
+  }
 
-  ngOnInit(): void {
+  async ngOnInit() {
+    let res = await this.feedingScheduleService.get().then();
+    this.feedingSchedules = res;
   }
 
 }

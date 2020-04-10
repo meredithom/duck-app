@@ -14,6 +14,11 @@ const routes: Routes = [
     path: 'list',
     pathMatch: 'full',
     component: FeedingScheduleComponent
+  },
+  {
+    path: 'duck-form',
+    pathMatch: 'full',
+    component: FeedingScheduleFormComponent
   }
 ]
 

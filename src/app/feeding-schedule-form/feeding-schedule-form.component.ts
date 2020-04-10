@@ -26,8 +26,6 @@ export class FeedingScheduleFormComponent implements OnInit {
   }
 
   async onSubmit(formData) {
-    console.log(formData);
     let res = await this.feedingScheduleService.add(formData).then();
-    console.log('This is the result', res);
   }
 }

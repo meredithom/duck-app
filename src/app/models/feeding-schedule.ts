@@ -1,5 +1,5 @@
 export interface FeedingSchedule {
-    id: number;
+    _id: string;
     feedingTime: string;
     feedingLocation: string;
     foodType: string;
