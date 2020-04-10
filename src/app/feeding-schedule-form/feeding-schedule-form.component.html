@@ -1,12 +1,36 @@
-<p>feeding-schedule-form works!</p>
-
-<div *ngIf="feedingSchedule">
-
-
-    <div>
-      <label>Number of Ducks:
-        <input [(ngModel)]="feedingSchedule.numberOfDucks" placeholder="#"/>
-      </label>
-    </div>
-  
-  </div>
+<div>
+    <h1>How did you feed the ducks?</h1>
+    <form [formGroup]="duckForm" (ngSubmit)="onSubmit(duckForm.value)">
+        <div>
+            <label for="feedingTime">
+                Feeding Time
+            </label>
+            <input id="feedingTime" type="text" formControlName="feedingTime">
+        </div>
+        <div>
+            <label for="foodType">
+                Food Type
+            </label>
+            <input id="foodType" type="text" formControlName="foodType">
+        </div>
+        <div>
+            <label for="feedingLocation">
+                Feeding Location
+            </label>
+            <input id="feedingLocation" type="text" formControlName="feedingLocation">
+        </div>
+        <div>
+            <label for="numberOfDucks">
+                Number of Ducks
+            </label>
+            <input id="numberOfDucks" type="text" formControlName="numberOfDucks">
+        </div>
+        <div>
+            <label for="foodQuantity">
+                Food Quantity
+            </label>
+            <input id="foodQuantity" type="text" formControlName="foodQuantity">
+        </div>
+        <button class="button" type="submit">Submit</button>
+    </form>
+</div>

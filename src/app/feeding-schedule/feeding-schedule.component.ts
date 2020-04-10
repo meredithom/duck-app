@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FeedingSchedule } from '../feeding-schedule';
+import { FeedingSchedule } from '../models/feeding-schedule';
 
 //testing
 import { FeedingSchedules } from '../mock-feeding-schedules';

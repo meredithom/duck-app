@@ -1,4 +1,4 @@
-import {FeedingSchedule} from './feeding-schedule'
+import {FeedingSchedule} from './models/feeding-schedule'
 
 export const FeedingSchedules : FeedingSchedule[] = [
     {id: 2, feedingTime: '2:00pm', foodType: 'seed', feedingLocation: 'swan lake', numberOfDucks: '3', foodQuantity: 'a little bit'},
