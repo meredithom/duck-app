@@ -1,1 +1,12 @@
 <p>feeding-schedule-form works!</p>
+
+<div *ngIf="feedingSchedule">
+
+
+    <div>
+      <label>Number of Ducks:
+        <input [(ngModel)]="feedingSchedule.numberOfDucks" placeholder="#"/>
+      </label>
+    </div>
+  
+  </div>

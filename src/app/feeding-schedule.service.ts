@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {feedingSchedule} from './feeding-schedule';
+import {FeedingSchedule} from './feeding-schedule';
 import { map } from 'rxjs/operators';
 
 
