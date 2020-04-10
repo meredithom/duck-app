@@ -1,0 +1,10 @@
+.form-item {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}

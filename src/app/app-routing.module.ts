@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FeedingScheduleComponent } from './feeding-schedule/feeding-schedule.component';
 import { HomeComponent } from './home/home.component';
 import { FeedingScheduleFormComponent } from './feeding-schedule-form/feeding-schedule-form.component';
+import { FormSubmissionConfirmationComponent } from './form-submission-confirmation/form-submission-confirmation.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,11 @@ const routes: Routes = [
     path: 'duck-form',
     pathMatch: 'full',
     component: FeedingScheduleFormComponent
+  },
+  {
+    path: 'form-submission',
+    pathMatch: 'full',
+    component: FormSubmissionConfirmationComponent
   }
 ]
 

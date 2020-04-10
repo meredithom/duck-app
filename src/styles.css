@@ -1,4 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/";
 
+/*BACKGROUND*/
+html {
+    background-color: #D4CCBB;
+    background-image: url(./app/assets/duck-app-bg.png);
+    height: 100%; 
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
+  body {
+      max-width: 70%;
+      display: flex;
+      margin: 82px auto 32px;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+/*BUTTON STYLES*/
+.btn-container {
+    text-align: center;
+    padding: 5px;
+}
+
+.btn     {
+    background-color: #4C8A57;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #356A3E;
+    color: white;
+    text-decoration: none;
+}
+  

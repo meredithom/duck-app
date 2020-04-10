@@ -8,13 +8,15 @@ import { FeedingScheduleComponent } from './feeding-schedule/feeding-schedule.co
 import { AppRoutingModule } from './app-routing.module';
 import { FeedingScheduleFormComponent } from './feeding-schedule-form/feeding-schedule-form.component';
 import { HomeComponent } from './home/home.component';
+import { FormSubmissionConfirmationComponent } from './form-submission-confirmation/form-submission-confirmation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FeedingScheduleComponent,
     FeedingScheduleFormComponent,
-    HomeComponent
+    HomeComponent,
+    FormSubmissionConfirmationComponent
   ],
   imports: [
     BrowserModule,

@@ -1,38 +1,44 @@
 <div>
     <h1>How did you feed the ducks?</h1>
     <form [formGroup]="duckForm" (ngSubmit)="onSubmit(duckForm.value)">
-        <div>
+        <div class="form-item">
             <label for="feedingTime">
-                Feeding Time
+                When did you feed the ducks?
             </label>
-            <input id="feedingTime" type="text" formControlName="feedingTime">
+            <input class="form-control" id="feedingTime" type="text" formControlName="feedingTime">
         </div>
-        <div>
-            <label for="foodType">
-                Food Type
-            </label>
-            <input id="foodType" type="text" formControlName="foodType">
-        </div>
-        <div>
+
+        <div class="form-item">
             <label for="feedingLocation">
-                Feeding Location
+                Where did you feed them?
             </label>
-            <input id="feedingLocation" type="text" formControlName="feedingLocation">
+            <input class="form-control" id="feedingLocation" type="text" formControlName="feedingLocation">
         </div>
-        <div>
-            <label for="numberOfDucks">
-                Number of Ducks
+
+        <div class="form-item">
+            <label for="foodType">
+                What did you feed them?
             </label>
-            <input id="numberOfDucks" type="text" formControlName="numberOfDucks">
+            <input class="form-control" id="foodType" type="text" formControlName="foodType">
         </div>
-        <div>
+
+        <div class="form-item">
             <label for="foodQuantity">
-                Food Quantity
+                How much did you feed them?
             </label>
-            <input id="foodQuantity" type="text" formControlName="foodQuantity">
+            <input class="form-control" id="foodQuantity" type="text" formControlName="foodQuantity">
         </div>
-        <button class="button" type="submit">Submit</button>
+
+        <div class="form-item">
+            <label for="numberOfDucks">
+                How many ducks did you feed?
+            </label>
+            <input class="form-control" id="numberOfDucks" type="text" formControlName="numberOfDucks">
+        </div>
+        <div class="btn-container">
+            <a class="btn" href="" role="button">Back</a>
+
+            <button class="btn" type="submit">Submit</button>
+        </div>
     </form>
 </div>
-
-<a class="btn btn-primary" href="" role="button">back</a>
