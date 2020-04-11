@@ -19,6 +19,12 @@ html {
       align-items: center;
   }
   
+/*CENTRED HEADERS*/
+.centered-title-container {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
 /*BUTTON STYLES*/
 .btn-container {
     text-align: center;
